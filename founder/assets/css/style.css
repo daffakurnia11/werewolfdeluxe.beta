@@ -1,0 +1,878 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v18-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v18-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/open-sans-v18-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Whitney-Medium.woff') format('woff');
+}
+
+* {
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black !important;
+    color: white;
+    padding-top: 60px;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+a.navbar-brand {
+    color: #18D26E;
+    font-size: 25px;
+}
+
+a.navbar-brand:hover {
+    color: #23814f;
+}
+
+a.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+a.nav-link:hover {
+    color: #8c8c8c;
+}
+
+.navbar-toggler .fa {
+    color: white;
+    font-size: 26px;
+}
+
+@media (max-width: 350px) {
+    a.navbar-brand {
+        font-size: 20px;
+    }
+}
+
+/*-- Header --*/
+#header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#header .container {
+    padding: 370px 0 150px;
+}
+
+#header h1 {
+    color: black;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#header i {
+    color: black;
+    padding: 10px 15px;
+    border-radius: 25%;
+    font-size: 50px;
+    transition: ease-in 0.2s;
+}
+
+#header i:hover {
+    background-color: #18d26f;
+}
+
+@media (max-width: 400px) {
+    #header h1 {
+        color: black;
+        font-weight: 900;
+        letter-spacing: 0px;
+        margin-top: 100px;
+    }
+
+    #header h1 {
+        font-size: 26px;
+    }
+
+    #header i {
+        padding: 10px 7px;
+        align-content: center;
+        font-size: 30px;
+    }
+
+    #header .container {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #header h1 {
+        font-size: 30px;
+        letter-spacing: 0;
+        font-weight: bolder;
+    }
+
+    #header i {
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
+/*-- About --*/
+.background-color {
+    background-color: #33333366;
+    color: white;
+    border-radius: 35px;
+    margin-top: 50px;
+}
+
+#about {
+    padding: 0 85px 0;
+}
+
+#about h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 70px;
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#about p {
+    margin: 25px 0 30px;
+    font-size: 17px;
+}
+
+#about img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+#about .profile {
+    padding-left: 45px;
+}
+
+#about .profile h4 {
+    color: #18D26E;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#about .profile p {
+    margin: 15px 0;
+}
+
+#about ul li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+#about ul li i {
+    color: #18D26E;
+    margin-right: 10px;
+}
+
+
+/*-- Skills --*/
+#skills {
+    padding: 0 85px 85px;
+}
+
+#skills h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+#skills h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#skills p {
+    margin: 25px 0 0;
+    font-size: 17px;
+}
+
+#skills h5 {
+    margin-top: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#skills .webdev-skills::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 250px;
+    margin: 20px auto 5px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#skills .photvid-skills::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 350px;
+    margin: 20px auto 5px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#skills .col {
+    margin: 0px 20px;
+}
+
+#skills h6 {
+    margin-top: 15px;
+}
+
+#skills .progress-bar {
+    background-color: #18D26E;
+    color: black;
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+}
+
+#skills .progress-bar:hover {
+    background-color: black;
+    color: #18D26E;
+}
+
+@media (max-width: 1200px) {
+    #about .profile {
+        padding-left: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-color {
+        padding: 50px !important;
+    }
+
+    #about,
+    #skills {
+        padding: 0;
+    }
+
+    #about .profile,
+    #skills {
+        padding-left: 0 !important;
+    }
+
+    #about .profile h4 {
+        margin-top: 20px;
+        margin-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #about p,
+    #about ul li,
+    #skills p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #about img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .background-color {
+        padding: 25px !important;
+        border-radius: 15px;
+    }
+
+    #about h2,
+    #skills h2 {
+        font-size: 25px;
+    }
+
+    #about h2::after {
+        width: 75px;
+        height: 2px;
+    }
+
+    #about .profile,
+    #skills {
+        padding: 0 !important;
+    }
+
+    #about .profile h4 {
+        margin-top: 20px;
+        margin-left: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #about p,
+    #about ul li,
+    #skills p {
+        font-size: 13px;
+    }
+
+    #skills h2::after {
+        width: 75px;
+        height: 2px;
+    }
+
+    #skills h5 {
+        font-size: 20px;
+        font-weight: 550;
+    }
+
+    #skills .webdev-skills::after,
+    #skills .photvid-skills::after {
+        height: 2px;
+        width: 200px;
+        margin: 20px auto 5px;
+        background: #18D26E;
+        border-radius: 1px;
+        margin-top: 10px;
+    }
+
+    #skills .progress-bar {
+        width: 100%;
+    }
+}
+
+/*-- Resume --*/
+#resume {
+    color: white;
+    padding: 0 100px 0;
+}
+
+#resume h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 70px;
+}
+
+#resume h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#resume p {
+    margin: 25px 0 15px;
+    font-size: 17px;
+}
+
+#resume .fa {
+    margin-right: 10px;
+}
+
+#resume .education,
+#resume .work,
+#resume .organization,
+#resume .event {
+    border-left: 3px solid #18D26E;
+    padding: 10px 0 5px 20px;
+    margin-bottom: 15px;
+}
+
+#resume h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#resume h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #18D26E;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#resume .row p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    #resume {
+        padding: 0 50px !important;
+    }
+
+    #resume p {
+        font-size: 16px;
+    }
+
+    #resume h4 {
+        font-size: 18px;
+    }
+
+    #resume .education p,
+    #resume .work p,
+    #resume .organization p,
+    #resume .event p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    #resume {
+        padding: 0 25px !important;
+    }
+
+    #resume h2 {
+        font-size: 25px;
+    }
+
+    #resume h2::after {
+        width: 85px;
+        height: 2px;
+    }
+
+    #resume p {
+        font-size: 13px;
+    }
+
+    #resume h4 {
+        font-size: 16px;
+    }
+
+    #resume .education p,
+    #resume .work p,
+    #resume .organization p,
+    #resume .event p {
+        font-size: 13px;
+    }
+}
+
+/*-- Portofolio --*/
+#portofolio {
+    background-image: url(../images/home-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 700px;
+}
+
+#portofolio .container {
+    padding: 0 100px 0;
+}
+
+#portofolio h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-top: 70px;
+}
+
+#portofolio h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#portofolio p {
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+#porto-desc .row {
+    margin: 0 50px;
+}
+
+#porto-desc .button-group {
+    padding: 0 100px;
+}
+
+#porto-desc .button-group .btn {
+    background-color: #18d26faf;
+    width: 100%;
+    color: white;
+    margin: 20px 0;
+    transition: ease-in-out 0.2s;
+}
+
+#porto-desc .btn:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: #18D26E;
+}
+
+#porto-desc .website {
+    margin: 0;
+    padding: 0 150px;
+}
+
+#porto-desc .website .carousel-inner {
+    width: 100%;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    transition: ease-in 0.3s;
+}
+
+#porto-desc .website .carousel-inner:hover {
+    opacity: 0.5;
+}
+
+#porto-desc #collapseTwo .row {
+    padding: 0 100px;
+}
+
+#porto-desc .website-link {
+    margin: 20px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#porto-desc .website-link a {
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+#porto-desc .website-link a:hover {
+    color: #5a5a5a;
+}
+
+#porto-desc .roda-bot,
+#porto-desc .deltakilo-bot {
+    background-color: #18191C;
+    border-radius: 20px;
+    font-family: 'Whitney';
+    padding: 30px 40px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#porto-desc .discord-bot img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#porto-desc .discord-bot h5 {
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#porto-desc .discord-bot .fa {
+    color: #37FF05;
+    margin-right: 10px;
+}
+
+#porto-desc .discord-bot p {
+    padding: 0 0 15px 0;
+    margin: 0;
+    border-bottom: 1px solid #8c8c8c;
+    font-size: 14px;
+}
+
+#porto-desc .discord-bot .btn {
+    background-color: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#porto-desc .photos {
+    padding: 0 100px;
+}
+
+#porto-desc .photos img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#porto-desc .photos h6 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#porto-desc .photos .btn {
+    background-color: #18d26faf;
+    padding: 10px 25px;
+    color: white;
+    margin: 20px 0;
+    transition: ease-in-out 0.2s;
+}
+
+#porto-desc .photos .btn:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: #18D26E;
+}
+
+@media (max-width: 768px) {
+    #portofolio {
+        height: auto;
+    }
+
+    #portofolio .container {
+        padding: 0 15px !important;
+    }
+
+    #portofolio h2 {
+        padding: 25px 35px;
+    }
+
+    #portofolio p {
+        padding: 0 35px;
+    }
+
+    #porto-desc .row {
+        margin: 0;
+    }
+
+    #porto-desc .button-group {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #porto-desc .website {
+        padding: 0 40px !important;
+    }
+
+    #porto-desc .website-link {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    #porto-desc #collapseTwo .row {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    #porto-desc .roda-bot,
+    #porto-desc .deltakilo-bot {
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+
+    #porto-desc .discord-bot h5,
+    #porto-desc .discord-bot .btn {
+        font-size: 16px;
+    }
+
+    #porto-desc .discord-bot h6,
+    #porto-desc .discord-bot p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    #portofolio .container {
+        padding: 0 15px !important;
+    }
+
+    #portofolio h2 {
+        padding: 25px 10px 0;
+        font-size: 25px;
+    }
+
+    #portofolio h2::after {
+        width: 100px;
+        height: 2px;
+    }
+
+    #portofolio p {
+        padding: 0 10px 15px;
+        font-size: 13px;
+    }
+
+    #porto-desc .button-group .btn {
+        margin-top: 5px;
+    }
+
+    #porto-desc .website {
+        padding: 0 10px !important;
+    }
+
+    #porto-desc .website-link {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    #porto-desc .photos {
+        padding: 0 10px;
+    }
+}
+
+/*-- Footer --*/
+#footer .container {
+    color: white;
+    padding: 0 100px;
+}
+
+#footer h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 35px 0;
+}
+
+#footer h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #18D26E;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+#footer .footer-content {
+    background-color: #33333366;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+#footer .footer-content .fa {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+#footer .footer-content .fa:hover {
+    background-color: #18D26E;
+    color: black;
+}
+
+#footer .footer-content h6 {
+    font-size: 14px;
+}
+
+#footer h1 {
+    letter-spacing: 3px;
+    margin: 15px;
+    color: #18D26E;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#footer .footer-contact i {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25%;
+    margin-bottom: 50px;
+}
+
+#footer .footer-contact i:hover {
+    background-color: #18d26f50;
+}
+
+#footer .copyright {
+    padding-bottom: 10px;
+    color: #8c8c8c;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    #footer .container {
+        padding: 0 50px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #footer .container {
+        padding: 0 15px !important;
+    }
+
+    #footer h2 {
+        padding: 25px 10px 0;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    #footer h2::after {
+        width: 100px;
+        height: 2px;
+    }
+
+    #footer .footer-content {
+        margin-bottom: 15px;
+    }
+
+    #footer .footer-content h6 {
+        font-size: 13px;
+    }
+
+    #footer .footer-contact h1 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #footer .footer-contact p {
+        font-size: 14px;
+    }
+
+    #footer .footer-contact i {
+        padding: 10px;
+    }
+}
