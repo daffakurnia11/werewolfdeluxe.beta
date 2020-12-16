@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Odin Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Odin Bold'), url('./Odin-Rounded.woff') format('woff');
+}
+
+* {
+    font-family: 'Odin Rounded', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-image: linear-gradient(to right, #E75032, #3E95DF) !important;
+}
+
+.navbarlogo {
+    font-size: 20px;
+    color: black;
+    display: inline;
+}
+
+.navbarlogo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: black;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.disabled {
+    color: white !important;
+}
+
+.navbar button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+@media (max-width: 476px) {
+    .navbarlogo {
+        display: none;
+    }
+}
+
+/*-- Header --*/
+#header {
+    margin: 100px auto 30px;
+}
+
+#header img.icon-game {
+    width: 180px;
+}
+
+#header h1 {
+    font-size: 40pt;
+    padding: 20px;
+    border: 2px dashed #3E95DF;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media (max-width: 376px) {
+    #header h1 {
+        font-size: 25pt;
+    }
+}
+
+/*-- Content Section How To Play --*/
+#howtoplay h1::after {
+    content: '';
+    background-image: linear-gradient(to right, #E75032, #3E95DF);
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 20px;
+}
+
+@media (max-width: 576px) {
+    #howtoplay h1 {
+        font-size: 28px;
+    }
+}
+
+#howtoplay button {
+    color: white;
+    background-image: linear-gradient(to right, #E75032, #3E95DF);
+    border-style: none;
+    font-size: 16px;
+    padding: 5px 25px;
+    margin-top: 5px;
+}
+
+#howtoplay .btn:hover {
+    background-image: linear-gradient(to right, #3E95DF, #E75032);
+    color: black !important;
+    text-decoration: none !important;
+    transition: ease-in-out 0.3s;
+}
+
+/*-- Content Section Card Components --*/
+#card-components h1::after {
+    content: '';
+    background-image: linear-gradient(to right, #E75032, #3E95DF);
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    width: 220px;
+    margin: 15px auto 30px;
+}
+
+@media (max-width: 576px) {
+    #card-components h1 {
+        font-size: 28px;
+    }
+}
+
+#card-components .btn {
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #E75032, #3E95DF);
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+}
+
+#card-components button:hover {
+    background-image: linear-gradient(to right, #3E95DF, #E75032);
+    color: black !important;
+    text-decoration: none !important;
+    transition: ease-in-out 0.3s;
+}
+
+@media (min-width: 768px) {
+    #card-components .description {
+        height: 450px;
+    }
+}
+
+#card-components .characters img {
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#card-components .approve-reject img {
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#card-components .success-fail img {
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#card-components .mission-board img {
+    width: 400px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    #card-components .approve-reject img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 476px) {
+    #card-components .success-fail img {
+        width: 100%;
+    }
+
+    #card-components .mission-board img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #card-components h2 {
+        font-size: 24px;
+    }
+}
+
+/*-- Footer --*/
+#contact .fa {
+    margin-right: 15px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        text-align: center;
+    }
+
+    #contact .links {
+        margin: 20px;
+    }
+}

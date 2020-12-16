@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Odin Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Odin Bold'), url('./Odin-Rounded.woff') format('woff');
+}
+
+* {
+    font-family: 'Odin Rounded', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*--Navigation Bar--*/
+.navbar {
+    background-color: black !important;
+}
+
+.navbarlogo {
+    font-size: 20px;
+    color: #cfcfcf;
+    display: inline;
+}
+
+.navbarlogo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.disabled {
+    color: #8c8c8c !important;
+}
+
+.navbar button {
+    background-color: #cfcfcf;
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+@media (max-width: 476px) {
+    .navbarlogo {
+        display: none;
+    }
+}
+
+/*--Header--*/
+#header {
+    margin: 150px auto 150px;
+}
+
+#header h1 {
+    color: #8c8c8c;
+    font-size: 50px;
+}
+
+#header .logoanimation {
+    width: 250px;
+}
+
+#header .logoimage {
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-in 0.2s;
+    margin: 0 30px;
+}
+
+#header .logoimage img {
+    max-width: 100px;
+}
+
+@media (max-width: 576px) {
+    #header .logoimage img {
+        max-width: 100%;
+    }
+}
+
+#header .logoimage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px white;
+}
+
+@media (max-width: 768px) {
+    #header {
+        margin: 150px auto 0px;
+    }
+
+    #header .greeting {
+        margin-bottom: 150px;
+    }
+
+    #header h1 {
+        color: #8c8c8c;
+        font-size: 30px;
+    }
+
+    #header .logoanimation {
+        width: 180px;
+    }
+
+    #header .logoimage {
+        margin: 15px 5px 0;
+    }
+}
+
+/*--Content About--*/
+#about h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #cfcfcf;
+    margin-top: 10px;
+}
+
+#about li img {
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#about .game-desc:hover {
+    box-shadow: 0 0 10px white;
+    transition: ease-in 0.2s;
+}
+
+/*--Content Store--*/
+#store {
+    margin-top: 30px;
+    background-image: url(images/WerewolfBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#store .store-logo {
+    margin: auto 200px;
+}
+
+@media (max-width: 992px) {
+    #store .store-logo {
+        margin: 0;
+    }
+}
+
+#store img {
+    max-width: 200px;
+}
+
+@media (max-width: 576px) {
+    #store img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 350px) {
+    #store img {
+        width: 120px;
+    }
+}
+
+/*--Content Product--*/
+#product h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #cfcfcf;
+    margin-top: 10px;
+}
+
+#product img {
+    margin: 25px auto 15px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.product-item {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 15px auto;
+    transition: ease-in 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px white;
+}
+
+#product button {
+    background-color: #cfcfcf;
+    color: black;
+    font-size: 14px;
+    padding: 5px 30px;
+    margin: 5px auto 20px;
+}
+
+#product button:hover {
+    box-shadow: 0px 0px 8px white;
+    color: white;
+}
+
+/*--Footer--*/
+#contact .fa {
+    margin-right: 15px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        text-align: center;
+    }
+
+    #contact .links {
+        margin: 20px;
+    }
+}

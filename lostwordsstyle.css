@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Odin Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Odin Bold'), url('./Odin-Rounded.woff') format('woff');
+}
+
+* {
+    font-family: 'Odin Rounded', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-color: #8c8c8c !important;
+}
+
+.navbarlogo {
+    font-size: 20px;
+    color: white;
+    display: inline;
+}
+
+.navbarlogo:hover {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+.disabled {
+    color: black !important;
+}
+
+.navbar button {
+    background-color: #cfcfcf;
+    color: white;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+@media (max-width: 476px) {
+    .navbarlogo {
+        display: none;
+    }
+}
+
+/*-- Header --*/
+#header {
+    margin: 100px auto 30px;
+}
+
+#header img.icon-game {
+    width: 150px;
+}
+
+#header h1 {
+    margin: 10px auto 30px;
+    font-size: 40pt;
+}
+
+#header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media (max-width: 376px) {
+    #header h1 {
+        font-size: 25pt;
+    }
+}
+
+/*-- Content Section How To Play --*/
+#howtoplay h1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+    #howtoplay h1 {
+        font-size: 28px;
+    }
+}
+
+#howtoplay .btn {
+    color: white;
+    margin-top: 10px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 15px;
+}
+
+#howtoplay .btn:hover {
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+/*-- Content Section Card Components --*/
+#card-components h1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+    #card-components h1 {
+        font-size: 28px;
+    }
+}
+
+#card-components .btn {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 15px;
+}
+
+#card-components button:hover {
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+@media (min-width: 768px) {
+    #card-components .description {
+        height: 280px;
+    }
+}
+
+#card-components .agent-cards img {
+    width: 100%;
+}
+
+#card-components .key-cards img {
+    width: 200px;
+}
+
+@media (min-width: 992px) {
+    #card-components .key-cards .row {
+        margin: 0 170px;
+    }
+}
+
+@media (max-width: 576px) {
+    #card-components .key-cards img {
+        width: 100%;
+    }
+}
+
+#card-components .word-cards img {
+    width: 800px;
+}
+
+@media (max-width: 992px) {
+    #card-components .word-cards img {
+        width: 100%;
+    }
+}
+
+/*-- Footer --*/
+#contact .fa {
+    margin-right: 15px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        text-align: center;
+    }
+
+    #contact .links {
+        margin: 20px;
+    }
+}

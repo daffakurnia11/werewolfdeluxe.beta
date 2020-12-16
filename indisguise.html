@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="indisguisestyle.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <title>Werewolf Deluxe Indonesia</title>
+</head>
+
+<body style="background-color: black;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="images/LogoBlack.png" alt="LogoBlack.png"
+                style="width: 60px; margin: 0px 10px 0 10px"><span class="navbarlogo">Werewolf
+                Deluxe Indonesia</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="menu fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="margin: 0 15px 0 0;">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Board Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                        style="background-color: #3E95DF;">
+                        <a class="dropdown-item" href="werewolfgame.html" style="font-size: 20px;">Werewolf</a>
+                        <a class="dropdown-item" href="thequarry.html" style="font-size: 20px;">The
+                            Quarry</a>
+                        <a class="dropdown-item" href="lostwords.html" style="font-size: 20px;">Lost Words</a>
+                        <a class="dropdown-item disabled" href="indisguise.html" style="font-size: 20px;">InDisguise</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html" style="margin: 0 15px 0 15px;">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="margin: 0 15px 0 0;">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header" class="container text-center" style="color: white">
+        <img class="icon-game" src="images/indisguiselogo.png" alt="indisguiselogo" data-aos="zoom-in" data-aos-duration="500">
+        <h1 data-aos="zoom-in" data-aos-duration="1000">InDisguise</h1>
+        <p data-aos="zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, delectus in eligendi est velit fugiat incidunt doloremque autem consectetur fuga.</p>
+    </header>
+    <!-- Content -->
+    <hr style="background-color: #3E95DF;">
+    <article class="container text-center" style="color: white;">
+        <section id="howtoplay">
+            <h1 data-aos="fade-up" data-aos-duration="1000">How To Play</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti suscipit ut, beatae autem aperiam consequuntur eligendi dignissimos rerum quisquam doloremque laudantium optio nesciunt reprehenderit voluptatem. Tempore consectetur dolor mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta error non maxime. A magni earum quae quis laborum vero inventore delectus sint nulla. Iure, eaque voluptatem! Deleniti totam dolores illum.</p>
+            <a href="#howtoplay"><button type="button" class="btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Read More!</button></a>
+        </section>
+        <section id="card-components" style="margin: 70px auto 40px;">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Card Components</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat, sapiente, porro odit consequuntur maxime veritatis quam unde at beatae necessitatibus nostrum quas vel inventore fugit error voluptatum ullam sunt!</p>
+            <div class="accordion" id="components">
+                <div class="row">
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#collapseOne">Characters</button>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#collapseTwo">Approve and Reject Cards</button>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#collapseThree">Mission Cards</button>
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#collapseFour">Mission Boards</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="characters collapse show" id="collapseOne" data-parent="#components" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/indisguise/loyalist.png" alt="loyalist.png">
+                                <h2>Loyalist</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequuntur modi alias tenetur expedita quidem, minima nemo omnis aperiam voluptatem fugit, labore mollitia doloremque saepe vero id reiciendis enim. Eligendi?</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/indisguise/defector.png" alt="defector.png">
+                                <h2>Defector</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam eligendi ipsum. Dolorum ipsam alias illum nesciunt enim itaque, exercitationem unde, obcaecati aliquid magnam aliquam aut, expedita et ex voluptatum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="approve-reject collapse" id="collapseTwo" data-parent="#components" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/indisguise/approve.png" alt="approve.png">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/indisguise/reject.png" alt="reject.png">
+                            </div>
+                        </div>
+                        <h2>Approve and Reject Cards</h2>
+                        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores debitis a nihil iure consequuntur velit nemo? Cumque sequi ex itaque, voluptatibus non numquam excepturi, a sint repellendus, illum accusamus.</p>
+                    </div>
+                    <div class="success-fail collapse" id="collapseThree" data-parent="#components" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/indisguise/success.png" alt="success.png">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/indisguise/fail.png" alt="fail.png">
+                            </div>
+                        </div>
+                        <h2>Success and Fail Cards</h2>
+                        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores debitis a nihil iure consequuntur velit nemo? Cumque sequi ex itaque, voluptatibus non numquam excepturi, a sint repellendus, illum accusamus.</p>
+                    </div>
+                    <div class="mission-board collapse" id="collapseFour" data-parent="#components" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <img src="images/indisguise/missionboard.png" alt="missionboard.png">
+                        <h2>Mission Boards</h2>
+                        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores debitis a nihil iure consequuntur velit nemo? Cumque sequi ex itaque, voluptatibus non numquam excepturi, a sint repellendus, illum accusamus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!-- Footer -->
+    <hr style="background-color: #cfcfcf; margin: 40px 0;">
+    <footer id="contact" style="color: #cfcfcf;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 info">
+                    <h4>Werewolf Deluxe Indonesia</h4>
+                    <p>Surabaya, Jawa Timur<br>Indonesia</p>
+                    <p><strong>Phone : </strong> +62 822 4583 8380 <br><strong>Email : </strong> wwdeluxe@gmail.com</p>
+                </div>
+                <div class="col-md-5 links">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>Our Links</h4>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="index.html">Home</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="product.html">Product</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="about.html">About</a>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <h4>Board Games</h4>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="werewolfgame.html">Werewolf Game</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="thequarry.html">The Quarry</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="lostwords.html">Lost Words</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-chevron-right"></i><a href="indisguise.html">InDisguise</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 info">
+                    <h4>Our Social Networks</h4>
+                    <p>For further information, Check our sosial media below</p>
+                    <div class="text-center social">
+                        <a href="https://api.whatsapp.com/send?phone=6282245838380" target="_blank">
+                            <i class="fa fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/werewolfdeluxe.store/" target="_blank">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/werewolfdeluxe" target="_blank">
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                        </a>
+                        <a href="mailto:wwdeluxe@gmail.com" target="_blank">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container text-center">
+                <p style="color: #8c8c8c; margin-top: 50px; font-size: 10pt;">Copyright &copy 2020 by Werewolf Deluxe<br>All rights
+                    reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

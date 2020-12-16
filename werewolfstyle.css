@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Odin Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Odin Bold'), url('./Odin-Rounded.woff') format('woff');
+}
+
+* {
+    font-family: 'Odin Rounded', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-color: black !important;
+}
+
+.navbarlogo {
+    font-size: 20px;
+    color: #cfcfcf;
+    display: inline;
+}
+
+.navbarlogo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.disabled {
+    color: #8c8c8c !important;
+}
+
+.navbar button {
+    background-color: #cfcfcf;
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+@media (max-width: 476px) {
+    .navbarlogo {
+        display: none;
+    }
+}
+
+/*-- Header --*/
+#header {
+    margin: 100px auto;
+}
+
+#header img.icon-game {
+    width: 150px;
+}
+
+#header h1 {
+    margin: 10px auto 30px;
+}
+
+#header h1::after {
+    content: '';
+    background: #cfcfcf;
+    display: block;
+    height: 3px;
+    width: 180px;
+    margin: 20px auto 5px;
+}
+
+#header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#header .char-sides {
+    margin: 30px 100px 10px;
+}
+
+#header .char-sides img {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+    #header .char-sides {
+        margin: 30px 0 10px;
+    }
+
+    #header .char-sides img {
+        width: 100%;
+    }
+}
+
+/*-- Content Section How To Play --*/
+#howtoplay h1::after {
+    content: '';
+    background: #cfcfcf;
+    display: block;
+    height: 3px;
+    width: 140px;
+    margin: 20px auto 30px;
+}
+
+#howtoplay .btn {
+    margin-top: 10px;
+    background-color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    color: black;
+    padding: 7px 25px;
+}
+
+#howtoplay .btn:hover {
+    background-color: black;
+    color: #cfcfcf;
+    transition: ease-in-out 0.3s;
+}
+
+/*-- Content Section Character Lists --*/
+#char-list h1::after {
+    content: '';
+    background: #cfcfcf;
+    display: block;
+    height: 3px;
+    width: 140px;
+    margin: 20px auto 30px;
+}
+
+#char-list .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#char-list button:hover {
+    background-color: black !important;
+    color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    transition: ease-in-out 0.3s;
+}
+
+#char-list .list-group-item {
+    background-color: black;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#char-list a:hover {
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+#char-list .red-text {
+    color: #E75032;
+}
+
+#char-list .green-text {
+    color: #46E175;
+}
+
+#char-list .yellow-text {
+    color: #F9FE37;
+}
+
+#char-list .grey-text {
+    color: #8c8c8c;
+}
+
+/*-- Footer --*/
+#contact .fa {
+    margin-right: 15px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        text-align: center;
+    }
+
+    #contact .links {
+        margin: 20px;
+    }
+}

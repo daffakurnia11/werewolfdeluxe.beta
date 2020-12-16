@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Odin Rounded';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Odin Bold'), url('./Odin-Rounded.woff') format('woff');
+}
+
+* {
+    font-family: 'Odin Rounded', sans-serif;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-color: black !important;
+}
+
+.navbarlogo {
+    font-size: 20px;
+    color: #cfcfcf;
+    display: inline;
+}
+
+.navbarlogo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.disabled {
+    color: #8c8c8c !important;
+}
+
+.navbar button {
+    background-color: #cfcfcf;
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+@media (max-width: 476px) {
+    .navbarlogo {
+        display: none;
+    }
+}
+
+/*--Header--*/
+#header h1 {
+    color: #8c8c8c;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+@media (max-width: 476px) {
+    #header h1 {
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+}
+
+/*--Content--*/
+#about h1 {
+    text-align: center;
+    color: #cfcfcf;
+}
+
+#about h1::after {
+    content: '';
+    background: #8c8c8c;
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    width: 270px;
+    margin: 20px auto 25px;
+}
+
+#about p {
+    text-align: center;
+    font-size: 18pt;
+    color: #cfcfcf;
+}
+
+
+#founder h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #cfcfcf;
+}
+
+#founder h1::after {
+    content: '';
+    background: #8c8c8c;
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 20px auto 5px;
+}
+
+#founder img {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 30%;
+}
+
+.founder {
+    color: white;
+}
+
+.card-body {
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#founder .founder a {
+    color: white;
+}
+
+#founder .founder a:hover {
+    color: #8c8c8c;
+    text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+    #about p {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 476px) {
+    #about h1 {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    #about h1::after {
+        height: 2px;
+        width: 200px;
+    }
+}
+
+/*--Footer--*/
+#contact .fa {
+    margin-right: 15px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        text-align: center;
+    }
+
+    #contact .links {
+        margin: 20px;
+    }
+}
